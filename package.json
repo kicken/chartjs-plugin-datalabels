@@ -32,7 +32,8 @@
     "test-unit:dev": "karma start --auto-watch --grep",
     "test-types": "tsc -p types/test",
     "test": "npm run test-types && npm run test-unit",
-    "test:dev": "npm run test-unit:dev"
+    "test:dev": "npm run test-unit:dev",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@simonbrunel/vuepress-plugin-versions": "^0.2.0",
