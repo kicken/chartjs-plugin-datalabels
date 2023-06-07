@@ -34,7 +34,7 @@ function getScaleOrigin(el) {
   var scale = el._scale || (horizontal && el._xScale) || el._yScale;
 
   if (!scale) {
-    return null;
+    return {x: null, y: null};
   }
 
   if (scale.xCenter !== undefined && scale.yCenter !== undefined) {
